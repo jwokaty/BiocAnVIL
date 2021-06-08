@@ -1,0 +1,25 @@
+---
+title: "Binary repository generation"
+shorttitle: "outlier dytection methods"
+author: "Vincent J. Carey, stvjc at channing.harvard.edu"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+vignette: >
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteIndexEntry{Binary repository generation}
+  %\VignetteEncoding{UTF-8}
+output:
+  BiocStyle::html_document:
+    highlight: pygments
+    number_sections: yes
+    theme: united
+    toc: yes
+---
+
+## Binary package installation (under development)
+
+- Because the software environment is fixed by the container, packages
+  can be pre-built and rapidly installed simply by copying from an
+  online repository. We are developing the tooling to support this
+  repository (as folders in google buckets) and to facilitate easy
+  installation (via the `AnVIL::install()` function).
+
