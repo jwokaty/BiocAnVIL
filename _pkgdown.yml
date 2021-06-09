@@ -11,8 +11,6 @@ navbar:
      href: https://github.com/vjcitn/BiocAnVIL
 
 home:
-  title: An R package for pool-noodle discovery
+  title: Bioc projects for AnVIL
   description: >
-    Do you love R? Do you love pool-noodles? If so, you might enjoy
-    using this package to automatically discover and add pool-noodles
-    to your growing collection.  [abc](http://abc.com)
+    Not clear what this file does.
