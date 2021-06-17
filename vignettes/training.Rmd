@@ -1,0 +1,67 @@
+---
+title: "Bioc/AnVIL training"
+author: "Bioc/AnVIL team"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+vignette: >
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteIndexEntry{training}
+  %\VignetteEncoding{UTF-8}
+output:
+  BiocStyle::html_document:
+    highlight: pygments
+    number_sections: yes
+    theme: united
+    toc: yes
+---
+
+# Bioc/AnVIL training
+
+## Beginner
+
+- [Get started with Bioconductor in AnVIL](https://anvilproject.org/learn/interactive-analysis/getting-started-with-bioconductor)
+- [Terra / AnVIL R / Bioconductor Popup Workshops](https://t.co/mf2ztLNFVe)
+  - Week 1: [Using R / Bioconductor in AnVIL](https://docs.google.com/document/d/18aNzWpt55I-dni9l0IZTB2G3oDOU4X07PyKGXFGyb40/edit)
+    ([video](https://www.youtube.com/watch?v=8Ccj__2GqJ4)) with Martin Morgan
+  - Week 2: [The R / Bioconductor AnVIL package](https://docs.google.com/document/d/1OnwhuzEtmn7urpcuJmTj8V_PT84BFt0sWMjohzU7F-0/edit)
+    ([video](https://www.youtube.com/watch?v=DO6RjmGjIZA)) with Martin Morgan and Nitesh Turaga
+  - Week 3: [Running a Workflow](https://docs.google.com/document/d/1qe_Fleh6qmXrQZn9zizptFPEzcWu5OszgXHuo4xzyFs/edit)
+    ([video](https://www.youtube.com/watch?v=CT82tcJTA0c)) with Martin Morgan and Kayla Interdonato
+  - Week 4: [Single-cell RNASeq with 'Orchestrating Single Cell Analysis' in R / Bioconductor](https://docs.google.com/document/d/1xG_r7tcAy0RJm-ONI8uFHHHgNehd99hebUESSGQXAF4/edit)
+    ([video](https://www.youtube.com/watch?v=0LfpVe-MmGE)) with Vince Carey
+  - Week 5: [Using AnVIL for Teaching R](https://docs.google.com/document/d/1fNNn3kleLrZLiXHsaUz7z2Et3kZ-IpIcBTlYzCYmscI/edit)
+    ([video](https://www.youtube.com/watch?v=U28gdlVg958)) with Levi Waldron
+  - Week 6: [Reproducible Research with AnVILPublish](https://docs.google.com/document/d/1KfAeZ4Tmg45AibOF8nugt7FnOo_KK6YFCTm13qYqoBI/edit)
+    ([video](https://www.youtube.com/watch?v=19upPoqNpx0)) with Martin Morgan
+  - Week 7: [Participant Stories](https://docs.google.com/document/d/1VCf1aOjW8BSrPO8Sf5m5rILWUYGdvdZNkZ0RwqVrkxs/edit)
+    ([video](https://www.youtube.com/watch?v=77_keFofsu8))
+
+## Workspaces 
+
+See illustrative examples of how you can use Bioconductor in AnVIL workspaces.
+
+- [The AnVIL package](https://app.terra.bio/#workspaces/bioconductor-rpci-anvil/Bioconductor-Package-AnVIL)
+    - Simplifies exploration of the Terra data model
+    - Supports programmatic development of workflows, workspaces, and resource management data
+- [Orchestrating Single Cell Analysis](https://app.terra.bio/#workspaces/use-strides/Bioconductor-Workshop-OSCA-3-12)
+    - Describes how to use a custom container to do all computations in the OSCA book [current to March 2021]
+    - Note: another workspace processes the book content via AnVILPublish
+- [RNA-seq analysis with DESeq2](https://app.terra.bio/#workspaces/bioconductor-rpci-anvil/Bioconductor-Workflow-DESeq2)
+    - A collection of Jupyter notebooks
+    - Includes a WDL workflow that runs salmon quantification on FASTQ inputs
+- [Pan-cancer Transcriptome Surveys](https://app.terra.bio/#workspaces/landmarkanvil2/pancan_tx_public)
+    - Two workflows, each devoted to different gene sets
+    - The WDL and scripts are registered at [dockstore.org](https://dockstore.org/workflows/github.com/vjcitn/BiocOncoTK/msireg1:master?tab=info)
+    - Unit testing for the script components are managed in [BiocOncoTK](https://github.com/vjcitn/BiocOncoTK/blob/master/tests/testthat/test_dockstore_scripts.R)
+
+## Notebooks
+
+- [Using Bioconductor's VCF processing stack](https://nbviewer.jupyter.org/github/vjcitn/terravar/blob/master/Tiny%20population%20stratification%20display.ipynb) to demonstrate population stratification using a small slice of chr17 from [EBI 1000 genomes VCF](http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_project/release/20190312_biallelic_SNV_and_INDEL/20190312_biallelic_SNV_and_INDEL_README.txt)
+- [Using Dockstore and Terra for Pan-cancer Transcriptomics](https://nbviewer.jupyter.org/github/vjcitn/terravar/blob/master/trimmedMondaySep16.ipynb) to compare relationships between gene expression and stratified or continuous measures of microsatellite instability in 33 TCGA tumor types
+
+## Miscellaneous
+
+- Shiny Apps
+    - [TerraPlane](https://github.com/shwetagopaul92/TerraPlane) filters Dockstore to find methods
+      based on search terms
+- Data Management Utilities
+    - R Markdown for Using Terra to Survey CCDG and CMG ?

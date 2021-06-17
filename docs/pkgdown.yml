@@ -1,9 +1,11 @@
-pandoc: '2.13'
+pandoc: '2.5'
 pkgdown: 1.6.1
 pkgdown_sha: ~
 articles:
   basics: basics.html
+  binrepo: binrepo.html
   containers: containers.html
   team: team.html
-last_built: 2021-06-08T21:38Z
+  training: training.html
+last_built: 2021-06-17T14:52Z
 
