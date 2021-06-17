@@ -1,11 +1,10 @@
 ---
-title: "Binary repository generation"
-shorttitle: "outlier dytection methods"
-author: "Vincent J. Carey, stvjc at channing.harvard.edu"
+title: "Bioc/AnVIL binary generation"
+author: "Bioc/AnVIL team"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 vignette: >
   %\VignetteEngine{knitr::rmarkdown}
-  %\VignetteIndexEntry{Binary repository generation}
+  %\VignetteIndexEntry{Bioc/AnVIL binary generation}
   %\VignetteEncoding{UTF-8}
 output:
   BiocStyle::html_document:

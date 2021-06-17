@@ -1,6 +1,0 @@
-# Bioconductor for AnVIL
-
-Bioconductor's contributions to [NHGRI's Analysis and VIsualization Laboratory (AnVIL)](https://anvilproject.org)
-	are many and are evolving.
-
-BBBBB

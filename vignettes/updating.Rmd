@@ -1,0 +1,25 @@
+---
+title: "Updating the Website"
+author: "Bioc/Anvil Team"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+vignette: >
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteIndexEntry{updating the website}
+  %\VignetteEncoding{UTF-8}
+output:
+  BiocStyle::html_document:
+    highlight: pygments
+    number_sections: yes
+    theme: united
+    toc: yes
+---
+
+# Updating the Website
+
+1. `git clone` the repository.
+2. If editing content, edit the `.Rmd` file in `vignettes` directory. Or to
+make a new article, add the new `.Rmd` file in `vignettes` directory. `pkgdown`
+will automatically generate a link to the article in the navigation. To edit
+the navigation, edit the `_pkgdown.yml` file.
+3. In the terminal, run `make` to rebuild the website. A local, updated version
+should appear in your browser.

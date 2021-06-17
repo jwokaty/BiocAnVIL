@@ -1,10 +1,10 @@
 ---
-title: "Bioconductor and AnVIL: an overview"
+title: "Bioc/AnVIL overview"
 author: "Bioc/AnVIL team"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 vignette: >
   %\VignetteEngine{knitr::rmarkdown}
-  %\VignetteIndexEntry{Bioconductor and AnVIL: an overview}
+  %\VignetteIndexEntry{Bioconductor / AnVIL Overview}
   %\VignetteEncoding{UTF-8}
 output:
   BiocStyle::html_document:
@@ -14,7 +14,7 @@ output:
     toc: yes
 ---
 
-# Bioconductor / AnVIL
+# Bioconductor / AnVIL Overview
 
 ## About _Bioconductor_ and _AnVIL_
 

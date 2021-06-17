@@ -4,7 +4,7 @@ author: "Vincent J. Carey, stvjc at channing.harvard.edu"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 vignette: >
   %\VignetteEngine{knitr::rmarkdown}
-  %\VignetteIndexEntry{The Bioc/AnVIL team}
+  %\VignetteIndexEntry{The Bioc/AnVIL Team}
   %\VignetteEncoding{UTF-8}
 output:
   BiocStyle::html_document:
@@ -13,47 +13,52 @@ output:
     theme: united
     toc: yes
 ---
-# Bioconductor / AnVIL
+# Bioconductor / AnVIL Team
 
-## Team
-
-### Current Developers
-
-<img src="images/teampics/VinceCarey.jpg"
-width="50%" alt="Vincent Carey" title="Vincent Carey"/>
+## Current Developers
+<div class="container">
+<div class="row align-items-center">
+<div class="col">
+<img src="images/teampics/VinceCarey.jpg" width="200px" alt="Vincent Carey" title="Vincent Carey"/>
 <br> Vincent Carey
-
-<img src="images/teampics/MartinMorgan.jpg"
-width="50%" alt="Martin Morgan" title="Martin Morgan"/>
+</div>
+<div class="col">
+<img src="images/teampics/MartinMorgan.jpg" width="200px" alt="Martin Morgan" title="Martin Morgan"/>
 <br>Martin Morgan (PI)
-
-<img src="images/teampics/SehyunOh.jpg"
-width="50%" alt="Sehyun Oh" title="Sehyun Oh"/>
+</div>
+</div>
+<div class="row align-items-center">
+<div class="col">
+<img src="images/teampics/SehyunOh.jpg" width="200px" alt="Sehyun Oh" title="Sehyun Oh"/>
 <br> Sehyun Oh
-
-<img src="images/teampics/MarcelRamos.jpg"
-width="50%" alt="Marcel Ramos" title="Marcel Ramos"/>
+</div>
+<div class="col">
+<img src="images/teampics/MarcelRamos.jpg" width="200px" alt="Marcel Ramos" title="Marcel Ramos"/>
 <br>Marcel Ramos
-
-<img src="images/teampics/LoriShepherd.jpg"
-width="50%" alt="Lori Shepherd" title="Lori Shepherd"/>
+</div>
+</div>
+<div class="row align-items-center">
+<div class="col">
+<img src="images/teampics/LoriShepherd.jpg" width="200px" alt="Lori Shepherd" title="Lori Shepherd"/>
 <br>Lori Ann Shepherd (PM)
-
-<!-- img src="images/teampics/BJStubbs.jpg"
-width="50%" alt="BJ Stubbs" title="BJ Stubbs"/> -->
-<br> BJ Stubbs
-
-<img src="images/teampics/NiteshTuraga.jpeg"
-width="50%" alt="Nitesh Turaga" title="Nitesh Turaga"/>
+</div>
+<div class="col">
+<img src="images/teampics/NiteshTuraga.jpeg" width="200px" alt="Nitesh Turaga" title="Nitesh Turaga"/>
 <br>Nitesh Turaga
-
-<img src="images/teampics/LeviWaldron.jpg"
-width="50%" alt="Levi Waldron" title="Levi Waldron"/>
+</div>
+</div>
+<div class="row align-items-center">
+<div class="col">
+<img src="images/teampics/LeviWaldron.jpg" width="200px" alt="Levi Waldron" title="Levi Waldron"/>
 <br> Levi Waldron
+</div>
+</div>
+</div>
 
-### Past Developers
+## Past Developers
 
 <ul>
-<li>Shweta Gopaulakrishnan</li>
-<li>Ludwig Geistlinger</li>
+  <li>BJ Stubbs</li>
+  <li>Shweta Gopaulakrishnan</li>
+  <li>Ludwig Geistlinger</li>
 </ul>
