@@ -1,23 +1,26 @@
 pkgdown:
-  as_is: true 
+  as_is: false
 
 template:
   params:
-    bootswatch: paper
+    bootswatch: yeti
     ganalytics: UA-93043521-1
 
 
 navbar:
-  components:
-    articles:
-      text: Project
+  left:
+    - text: "Home"
+      href: index.html
+    - text: Project
       menu:
         - text: Overview
           href: articles/overview.html
-        - text: Containers 
-          href: articles/containers.html
-        - text: Binary Repository Generation 
+        - text: Docker Images
+          href: articles/images.html
+        - text: Binary Repository Generation
           href: articles/binrepo.html
+        - text: Bioconductor Packages
+          href: articles/packages.html
         - text: Training 
           href: articles/training.html
         - text: Team 

@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bioc/AnVIL training • BiocAnVIL</title>
-<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/paper/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/yeti/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- bootstrap-toc --><link rel="stylesheet" href="../bootstrap-toc.css">
 <script src="../bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
@@ -45,13 +45,7 @@
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
 <li>
-  <a href="../index.html">
-    <span class="fas fa-home fa-lg"></span>
-     
-  </a>
-</li>
-<li>
-  <a href="../reference/index.html">Reference</a>
+  <a href="../index.html">Home</a>
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -64,10 +58,13 @@
       <a href="../articles/overview.html">Overview</a>
     </li>
     <li>
-      <a href="../articles/containers.html">Containers</a>
+      <a href="../articles/images.html">Docker Images</a>
     </li>
     <li>
       <a href="../articles/binrepo.html">Binary Repository Generation</a>
+    </li>
+    <li>
+      <a href="../articles/packages.html">Bioconductor Packages</a>
     </li>
     <li>
       <a href="../articles/training.html">Training</a>
@@ -104,7 +101,7 @@
       <h1 data-toc-skip>Bioc/AnVIL training</h1>
                         <h4 class="author">Bioc/AnVIL team</h4>
             
-            <h4 class="date">June 17, 2021</h4>
+            <h4 class="date">June 24, 2021</h4>
       
       <small class="dont-index">Source: <a href="https://github.com/vjcitn/BiocAnVIL/blob/master/vignettes/training.Rmd"><code>vignettes/training.Rmd</code></a></small>
       <div class="hidden name"><code>training.Rmd</code></div>
@@ -113,16 +110,10 @@
 
     
     
-<div id="biocanvil-training" class="section level1">
-<h1 class="hasAnchor">
-<a href="#biocanvil-training" class="anchor"></a>Bioc/AnVIL training</h1>
-<div id="beginner" class="section level2">
+<div id="terra-anvil-r-bioconductor-popup-workshops" class="section level2">
 <h2 class="hasAnchor">
-<a href="#beginner" class="anchor"></a>Beginner</h2>
-<ul>
-<li><a href="https://anvilproject.org/learn/interactive-analysis/getting-started-with-bioconductor">Get started with Bioconductor in AnVIL</a></li>
-<li>
-<a href="https://t.co/mf2ztLNFVe">Terra / AnVIL R / Bioconductor Popup Workshops</a>
+<a href="#terra-anvil-r-bioconductor-popup-workshops" class="anchor"></a>Terra / AnVIL R / Bioconductor Popup Workshops</h2>
+<p>The following <a href="https://t.co/mf2ztLNFVe">Terra / AnVIL R / Bioconductor Popup Workshops</a> were held in 2021 from April to June.</p>
 <ul>
 <li>Week 1: <a href="https://docs.google.com/document/d/18aNzWpt55I-dni9l0IZTB2G3oDOU4X07PyKGXFGyb40/edit">Using R / Bioconductor in AnVIL</a> (<a href="https://www.youtube.com/watch?v=8Ccj__2GqJ4">video</a>) with Martin Morgan</li>
 <li>Week 2: <a href="https://docs.google.com/document/d/1OnwhuzEtmn7urpcuJmTj8V_PT84BFt0sWMjohzU7F-0/edit">The R / Bioconductor AnVIL package</a> (<a href="https://www.youtube.com/watch?v=DO6RjmGjIZA">video</a>) with Martin Morgan and Nitesh Turaga</li>
@@ -132,8 +123,7 @@
 <li>Week 6: <a href="https://docs.google.com/document/d/1KfAeZ4Tmg45AibOF8nugt7FnOo_KK6YFCTm13qYqoBI/edit">Reproducible Research with AnVILPublish</a> (<a href="https://www.youtube.com/watch?v=19upPoqNpx0">video</a>) with Martin Morgan</li>
 <li>Week 7: <a href="https://docs.google.com/document/d/1VCf1aOjW8BSrPO8Sf5m5rILWUYGdvdZNkZ0RwqVrkxs/edit">Participant Stories</a> (<a href="https://www.youtube.com/watch?v=77_keFofsu8">video</a>)</li>
 </ul>
-</li>
-</ul>
+<p><a href="https://docs.google.com/presentation/d/1AvEt6UIIx-G5eTe4hlfkGOYsUcSQrKx8ySlnnfg7XH8/edit?usp=sharing">Terra in the Classroom</a> documents the experience of running a small course utilizing AnVIL. Includes some set up, learned positives and negatives from February 2020.</p>
 </div>
 <div id="workspaces" class="section level2">
 <h2 class="hasAnchor">
@@ -194,13 +184,52 @@
 <a href="https://github.com/shwetagopaul92/TerraPlane">TerraPlane</a> filters Dockstore to find methods based on search terms</li>
 </ul>
 </li>
-<li>Data Management Utilities
+<li>
+<p>Data Management Utilities</p>
 <ul>
-<li>R Markdown for Using Terra to Survey CCDG and CMG ?</li>
+<li>
+<p>Results as of 20 June 2019</p>
+<ul>
+<li>
+<em>R</em> markdown for <a href="">using terra to survey CCDG and CMG</a>
+</li>
 </ul>
 </li>
 </ul>
-</div>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="co">## # A tibble: 10 x 3</span>
+<span class="co">## # Groups:   study [2]</span>
+<span class="co">##    study organ      N</span>
+<span class="co">##    &lt;chr&gt; &lt;chr&gt;  &lt;int&gt;</span>
+<span class="co">##  1 CCDG  AI      9031</span>
+<span class="co">##  2 CCDG  CVD    25741</span>
+<span class="co">##  3 CCDG  NP     19422</span>
+<span class="co">##  4 CMG   Blood    277</span>
+<span class="co">##  5 CMG   Brain   1844</span>
+<span class="co">##  6 CMG   Eye      552</span>
+<span class="co">##  7 CMG   Heart    184</span>
+<span class="co">##  8 CMG   Kidney   432</span>
+<span class="co">##  9 CMG   Muscle  1722</span>
+<span class="co">## 10 CMG   Orphan   717</span></code></pre></div>
+<ul>
+<li>Drilling down on CCDG</li>
+</ul>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="co">## # A tibble: 9 x 4</span>
+<span class="co">## # Groups:   study, organ [3]</span>
+<span class="co">##   study organ addit         N</span>
+<span class="co">##   &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;     &lt;int&gt;</span>
+<span class="co">## 1 CCDG  AI    Asthma     1171</span>
+<span class="co">## 2 CCDG  AI    IBD        4694</span>
+<span class="co">## 3 CCDG  AI    T1D        3166</span>
+<span class="co">## 4 CCDG  CVD   AFib       3731</span>
+<span class="co">## 5 CCDG  CVD   EOCAD     20156</span>
+<span class="co">## 6 CCDG  CVD   HemStroke  1358</span>
+<span class="co">## 7 CCDG  CVD   Stroke      496</span>
+<span class="co">## 8 CCDG  NP    Alz        2374</span>
+<span class="co">## 9 CCDG  NP    Autism    17048</span></code></pre></div>
+</li>
+</ul>
 </div>
   </div>
 

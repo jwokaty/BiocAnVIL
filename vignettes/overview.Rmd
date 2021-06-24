@@ -14,8 +14,6 @@ output:
     toc: yes
 ---
 
-# Bioconductor / AnVIL Overview
-
 ## About _Bioconductor_ and _AnVIL_
 
 [_Bioconductor_][] is a successful open-source project for the
@@ -23,7 +21,7 @@ statistical analysis and comprehension of high throughput genomic
 data. _Bioconductor_ is based on the _R_ programming language. It
 consists of more than 1600 [_R_ packages][] contributed by more than
 1000 maintainers world-wide. _Bioconductor_ packages are downloaded to 1/2
-million IP addresses annualy. There are more than 29,000
+million IP addresses annually. There are more than 29,000
 [PubMedCentral citations][] to _Bioconductor_. _Bioconductor_ has an
 active [support site][] and [community slack][].
 
@@ -31,11 +29,11 @@ active [support site][] and [community slack][].
 Genome Research Institute initiative to develop a Genomic Data Science
 Analysis, Visualization, and Informatics Lab-space (AnVIL).
 
-Ultimately, _AnVIL_ will provide the ability to launch RStudio,
-Jupyter notebook, and other _R_ / _Bioconductor_ resources in a
-computational cloud. The _AnVIL_ environment will provide secure access
-to large-scale as well as individual data resources, and to scalable
-cloud-based computational environments.
+_AnVIL_ provides the ability to launch RStudio, Jupyter notebook, and
+other _R_ / _Bioconductor_ resources in a computational cloud. The
+_AnVIL_ environment provides secure access to large-scale as well as
+individual data resources, and to scalable cloud-based computational
+environments.
 
 [_Bioconductor_]: https://bioconductor.org
 [_AnVIL_]: https://www.genome.gov/27569268/genomic-analysis-visualization-and-informatics-labspace-anvil/

@@ -1,0 +1,64 @@
+---
+title: "Bioc/AnVIL Packages"
+author: "Bioc/AnVIL team"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+vignette: >
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteIndexEntry{Bioconductor / AnVIL Packages}
+  %\VignetteEncoding{UTF-8}
+output:
+  BiocStyle::html_document:
+    highlight: pygments
+    number_sections: yes
+    theme: united
+    toc: yes
+---
+
+## AnVIL Package Tools
+
+### AnVIL
+
+The AnVIL package provides binary package installation, utitlities for manipulating
+table and data resources, and functions for moving files between AnVIL Terra and 
+Google cloud storage. It also provides programmatic access with helper functions
+to the Terra, Leonardo, Rawls, Dockstore, and Gen3 RESTful programming interface.
+For more information, see
+
+- [AnVIL package at bioconductor.og](https://bioconductor.org/packages/AnVIL)
+- [AnVIL package source at github.com](https://github.com/Bioconductor/AnVIL)
+
+### AnVILPublish
+
+Create and update AnVIL workspaces from R / Bioconductor packages. For more
+information, see
+
+* [AnVILPublish at bioconductor.org](https://bioconductor.org/packages/AnVILPublish)
+* [AnVILPublish at github.com](https://github.com/Bioconductor/AnVILPublish)
+
+### AnVILBilling
+
+Retrieve and report on the costs related to AnVIL and Terra resources. For
+more information, see
+
+* [AnVILBilling at github.com](https://bioconductor.org/packages/AnVILBilling)
+* [AnVILBilling at github.com](https://github.com/vjcitn/AnVILBilling)
+
+## Metadata access and overview
+
+AnVIL package tools can be used to discover incompatibilities or ambiguities
+in study annotation. BJ’s class worked through metadata survey exercises. An
+example of incompatible/ambiguous annotation is present in the Autism workspaces.
+
+![Workspace showing an example of incompatible/ambiguous annotation in Autism
+workspaces](images/ccdgAFF.png "Incompatible/Ambiguous Annotation in Autism Workspaces")
+
+We are looking at two studies from NYGC referring to autism, one has substring
+ACE2 and the other SSC. What we see above is that AFFECTION_STATUS is coded 1/2 in
+the SSC study, and more prosaically in the ACE2 study. It may be that the labels
+in ACE2 study are more problematic as the options seem to be "0", "ASD affected",
+"ASD Affected", and "Diagnosis uncertain" – or perhaps it is just a
+letter casing issue.
+
+The ingestion group was notified and replied that "there is no process for the
+AnVIL team to retrospectively address existing data". Interest was expressed in
+learning more about our metadata survey capabilities.

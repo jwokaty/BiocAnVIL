@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bioconductor AnVIL Projects • BiocAnVIL</title>
-<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/paper/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/yeti/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- bootstrap-toc --><link rel="stylesheet" href="bootstrap-toc.css">
 <script src="bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
@@ -45,13 +45,7 @@
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
 <li>
-  <a href="index.html">
-    <span class="fas fa-home fa-lg"></span>
-     
-  </a>
-</li>
-<li>
-  <a href="reference/index.html">Reference</a>
+  <a href="index.html">Home</a>
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -64,10 +58,13 @@
       <a href="articles/overview.html">Overview</a>
     </li>
     <li>
-      <a href="articles/containers.html">Containers</a>
+      <a href="articles/images.html">Docker Images</a>
     </li>
     <li>
       <a href="articles/binrepo.html">Binary Repository Generation</a>
+    </li>
+    <li>
+      <a href="articles/packages.html">Bioconductor Packages</a>
     </li>
     <li>
       <a href="articles/training.html">Training</a>
@@ -103,61 +100,24 @@
 <div id="bioconductor-for-anvil" class="section level2">
 <h2 class="hasAnchor">
 <a href="#bioconductor-for-anvil" class="anchor"></a>Bioconductor for AnVIL</h2>
-<p>Bioconductor is available in <a href="https://anvilproject.org">NHGRI’s Analysis and VIsualization Laboratory (AnVIL)</a>. AnVIL is a US National Institutes of Health / National Human Genome Research Institute initiative powered by Terra to provide a secure cloud environment for genomic data science analysis, visualization, and informatics. AnVIL provides the ability to launch RStudio, Jupyter notebook, and other R / Bioconductor resources in a computational cloud.</p>
+<p>Bioconductor is available in <a href="https://anvilproject.org">NHGRI’s Analysis and VIsualization Laboratory (AnVIL)</a>. <a href="https://anvil.terra.bio">AnVIL</a> is a US National Institutes of Health / National Human Genome Research Institute initiative powered by Terra to provide a secure cloud environment for genomic data science analysis, visualization, and informatics. AnVIL provides the ability to launch RStudio, Jupyter notebook, and other R / Bioconductor resources in a computational cloud.</p>
 <p>Bioconductor contributes R / Bioconductor Jupyter notebooks, RStudio / Bioconductor docker images, AnVIL packages, fast binary installation packages, workshops, and training materials to AnVIL.</p>
-<div id="use-bioconductor-in-anvil" class="section level3">
-<h3 class="hasAnchor">
-<a href="#use-bioconductor-in-anvil" class="anchor"></a>Use Bioconductor in AnVIL</h3>
-<p><a href="https://anvilproject.org/learn/interactive-analysis/getting-started-with-bioconductor">Get started</a> with Bioconductor in AnVIL or watch the <a href="https://t.co/mf2ztLNFVe">Terra / AnVIL R / Bioconductor Popup Workshops</a> to learn about</p>
-<ul>
-<li><a href="https://docs.google.com/document/d/18aNzWpt55I-dni9l0IZTB2G3oDOU4X07PyKGXFGyb40/edit">Using R / Bioconductor in AnVIL</a></li>
-<li><a href="https://docs.google.com/document/d/1OnwhuzEtmn7urpcuJmTj8V_PT84BFt0sWMjohzU7F-0/edit">The R / Bioconductor AnVIL package</a></li>
-<li><a href="https://docs.google.com/document/d/1qe_Fleh6qmXrQZn9zizptFPEzcWu5OszgXHuo4xzyFs/edit">Running a Workflow</a></li>
-<li><a href="https://docs.google.com/document/d/1xG_r7tcAy0RJm-ONI8uFHHHgNehd99hebUESSGQXAF4/edit">Single-cell RNASeq with ‘Orchestrating Single Cell Analysis’ in R / Bioconductor</a></li>
-<li><a href="https://docs.google.com/document/d/1fNNn3kleLrZLiXHsaUz7z2Et3kZ-IpIcBTlYzCYmscI/edit">Using AnVIL for Teaching R</a></li>
-<li><a href="https://docs.google.com/document/d/1KfAeZ4Tmg45AibOF8nugt7FnOo_KK6YFCTm13qYqoBI/edit">Reproducible Research with AnVILPublish</a></li>
-<li><a href="https://docs.google.com/document/d/1VCf1aOjW8BSrPO8Sf5m5rILWUYGdvdZNkZ0RwqVrkxs/edit">Participant Stories</a></li>
-</ul>
-<p>See illustrative examples of how you can use Bioconductor in AnVIL workspaces:</p>
-<ul>
-<li>
-<a href="https://app.terra.bio/#workspaces/bioconductor-rpci-anvil/Bioconductor-Package-AnVIL">The AnVIL package</a>
-<ul>
-<li>Simplifies exploration of the Terra data model</li>
-<li>Supports programmatic development of workflows, workspaces, and resource management data</li>
-</ul>
-</li>
-<li>
-<a href="https://app.terra.bio/#workspaces/use-strides/Bioconductor-Workshop-OSCA-3-12">Orchestrating Single Cell Analysis</a>
-<ul>
-<li>Describes how to use a custom container to do all computations in the OSCA book [current to March 2021]</li>
-<li>Note: another workspace processes the book content via AnVILPublish</li>
-</ul>
-</li>
-<li>
-<a href="https://app.terra.bio/#workspaces/bioconductor-rpci-anvil/Bioconductor-Workflow-DESeq2">RNA-seq analysis with DESeq2</a>
-<ul>
-<li>A collection of Jupyter notebooks</li>
-<li>Includes a WDL workflow that runs salmon quantification on FASTQ inputs</li>
-</ul>
-</li>
-</ul>
-</div>
 <div id="bioconductors-work-in-anvil" class="section level3">
 <h3 class="hasAnchor">
 <a href="#bioconductors-work-in-anvil" class="anchor"></a>Bioconductor’s work in AnVIL</h3>
 <ul>
-<li>Docker <a href="articles/containers.html">containers for use in Terra</a>
-</li>
-<li>Complete binary repositories for Bioconductor software</li>
-<li>Bioconductor packages
-<ul>
-<li>AnVIL (<a href="https://bioconductor.org/packages/AnVIL">docs</a>) (<a href="https://github.com/Bioconductor/AnVIL">source</a>)</li>
-<li>AnVILPublish (<a href="https://bioconductor.org/packages/AnVILPublish">docs</a>) (<a href="https://github.com/Bioconductor/AnVILPublish">source</a>)</li>
-<li>AnVILBilling (<a href="https://bioconductor.org/packages/AnVILBilling">docs</a>) (<a href="https://github.com/Bioconductor/AnVILBilling">source</a>)</li>
+<li>
+<a href="articles/images.html">Docker images</a> for use in Terra</li>
+<li>
+<a href="articles/binrepo.html">Binary repositories</a> for Bioconductor software</li>
+<li><a href="articles/packages.html">Bioconductor packages</a></li>
+<li><a href="articles/training.html">AnVIL Training</a></li>
 </ul>
-</li>
-</ul>
+</div>
+<div id="use-bioconductor-in-anvil" class="section level3">
+<h3 class="hasAnchor">
+<a href="#use-bioconductor-in-anvil" class="anchor"></a>Use Bioconductor in AnVIL</h3>
+<p>Visit <a href="https://anvilproject.org/">anvilproject.org</a> to learn more about AnVIL or <a href="https://anvilproject.org/learn/interactive-analysis/getting-started-with-bioconductor">get started</a> with Bioconductor in AnVIL.</p>
 </div>
 </div>
   </div>

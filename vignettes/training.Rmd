@@ -14,26 +14,29 @@ output:
     toc: yes
 ---
 
-# Bioc/AnVIL training
+## Terra / AnVIL R / Bioconductor Popup Workshops 
 
-## Beginner
+The following [Terra / AnVIL R / Bioconductor Popup Workshops](https://t.co/mf2ztLNFVe)
+were held in 2021 from April to June.
 
-- [Get started with Bioconductor in AnVIL](https://anvilproject.org/learn/interactive-analysis/getting-started-with-bioconductor)
-- [Terra / AnVIL R / Bioconductor Popup Workshops](https://t.co/mf2ztLNFVe)
-  - Week 1: [Using R / Bioconductor in AnVIL](https://docs.google.com/document/d/18aNzWpt55I-dni9l0IZTB2G3oDOU4X07PyKGXFGyb40/edit)
-    ([video](https://www.youtube.com/watch?v=8Ccj__2GqJ4)) with Martin Morgan
-  - Week 2: [The R / Bioconductor AnVIL package](https://docs.google.com/document/d/1OnwhuzEtmn7urpcuJmTj8V_PT84BFt0sWMjohzU7F-0/edit)
-    ([video](https://www.youtube.com/watch?v=DO6RjmGjIZA)) with Martin Morgan and Nitesh Turaga
-  - Week 3: [Running a Workflow](https://docs.google.com/document/d/1qe_Fleh6qmXrQZn9zizptFPEzcWu5OszgXHuo4xzyFs/edit)
-    ([video](https://www.youtube.com/watch?v=CT82tcJTA0c)) with Martin Morgan and Kayla Interdonato
-  - Week 4: [Single-cell RNASeq with 'Orchestrating Single Cell Analysis' in R / Bioconductor](https://docs.google.com/document/d/1xG_r7tcAy0RJm-ONI8uFHHHgNehd99hebUESSGQXAF4/edit)
-    ([video](https://www.youtube.com/watch?v=0LfpVe-MmGE)) with Vince Carey
-  - Week 5: [Using AnVIL for Teaching R](https://docs.google.com/document/d/1fNNn3kleLrZLiXHsaUz7z2Et3kZ-IpIcBTlYzCYmscI/edit)
-    ([video](https://www.youtube.com/watch?v=U28gdlVg958)) with Levi Waldron
-  - Week 6: [Reproducible Research with AnVILPublish](https://docs.google.com/document/d/1KfAeZ4Tmg45AibOF8nugt7FnOo_KK6YFCTm13qYqoBI/edit)
-    ([video](https://www.youtube.com/watch?v=19upPoqNpx0)) with Martin Morgan
-  - Week 7: [Participant Stories](https://docs.google.com/document/d/1VCf1aOjW8BSrPO8Sf5m5rILWUYGdvdZNkZ0RwqVrkxs/edit)
-    ([video](https://www.youtube.com/watch?v=77_keFofsu8))
+- Week 1: [Using R / Bioconductor in AnVIL](https://docs.google.com/document/d/18aNzWpt55I-dni9l0IZTB2G3oDOU4X07PyKGXFGyb40/edit)
+  ([video](https://www.youtube.com/watch?v=8Ccj__2GqJ4)) with Martin Morgan
+- Week 2: [The R / Bioconductor AnVIL package](https://docs.google.com/document/d/1OnwhuzEtmn7urpcuJmTj8V_PT84BFt0sWMjohzU7F-0/edit)
+  ([video](https://www.youtube.com/watch?v=DO6RjmGjIZA)) with Martin Morgan and Nitesh Turaga
+- Week 3: [Running a Workflow](https://docs.google.com/document/d/1qe_Fleh6qmXrQZn9zizptFPEzcWu5OszgXHuo4xzyFs/edit)
+  ([video](https://www.youtube.com/watch?v=CT82tcJTA0c)) with Martin Morgan and Kayla Interdonato
+- Week 4: [Single-cell RNASeq with 'Orchestrating Single Cell Analysis' in R / Bioconductor](https://docs.google.com/document/d/1xG_r7tcAy0RJm-ONI8uFHHHgNehd99hebUESSGQXAF4/edit)
+  ([video](https://www.youtube.com/watch?v=0LfpVe-MmGE)) with Vince Carey
+- Week 5: [Using AnVIL for Teaching R](https://docs.google.com/document/d/1fNNn3kleLrZLiXHsaUz7z2Et3kZ-IpIcBTlYzCYmscI/edit)
+  ([video](https://www.youtube.com/watch?v=U28gdlVg958)) with Levi Waldron
+- Week 6: [Reproducible Research with AnVILPublish](https://docs.google.com/document/d/1KfAeZ4Tmg45AibOF8nugt7FnOo_KK6YFCTm13qYqoBI/edit)
+  ([video](https://www.youtube.com/watch?v=19upPoqNpx0)) with Martin Morgan
+- Week 7: [Participant Stories](https://docs.google.com/document/d/1VCf1aOjW8BSrPO8Sf5m5rILWUYGdvdZNkZ0RwqVrkxs/edit)
+  ([video](https://www.youtube.com/watch?v=77_keFofsu8))
+
+[Terra in the Classroom](https://docs.google.com/presentation/d/1AvEt6UIIx-G5eTe4hlfkGOYsUcSQrKx8ySlnnfg7XH8/edit?usp=sharing)
+documents the experience of running a small course utilizing AnVIL. Includes some set up,
+learned positives and negatives from February 2020.
 
 ## Workspaces 
 
@@ -64,4 +67,42 @@ See illustrative examples of how you can use Bioconductor in AnVIL workspaces.
     - [TerraPlane](https://github.com/shwetagopaul92/TerraPlane) filters Dockstore to find methods
       based on search terms
 - Data Management Utilities
-    - R Markdown for Using Terra to Survey CCDG and CMG ?
+
+	- Results as of 20 June 2019
+
+      - _R_ markdown for [using terra to survey CCDG and
+          CMG]()
+
+  ```{r eval = FALSE} 
+  ## # A tibble: 10 x 3
+  ## # Groups:   study [2]
+  ##    study organ      N
+  ##    <chr> <chr>  <int>
+  ##  1 CCDG  AI      9031
+  ##  2 CCDG  CVD    25741
+  ##  3 CCDG  NP     19422
+  ##  4 CMG   Blood    277
+  ##  5 CMG   Brain   1844
+  ##  6 CMG   Eye      552
+  ##  7 CMG   Heart    184
+  ##  8 CMG   Kidney   432
+  ##  9 CMG   Muscle  1722
+  ## 10 CMG   Orphan   717
+  ```
+
+	- Drilling down on CCDG
+  ```{r eval = FALSE} 
+  ## # A tibble: 9 x 4
+  ## # Groups:   study, organ [3]
+  ##   study organ addit         N
+  ##   <chr> <chr> <chr>     <int>
+  ## 1 CCDG  AI    Asthma     1171
+  ## 2 CCDG  AI    IBD        4694
+  ## 3 CCDG  AI    T1D        3166
+  ## 4 CCDG  CVD   AFib       3731
+  ## 5 CCDG  CVD   EOCAD     20156
+  ## 6 CCDG  CVD   HemStroke  1358
+  ## 7 CCDG  CVD   Stroke      496
+  ## 8 CCDG  NP    Alz        2374
+  ## 9 CCDG  NP    Autism    17048
+  ```

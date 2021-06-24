@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bioc/AnVIL binary generation • BiocAnVIL</title>
-<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/paper/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.4.0/yeti/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- bootstrap-toc --><link rel="stylesheet" href="../bootstrap-toc.css">
 <script src="../bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
@@ -45,13 +45,7 @@
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
 <li>
-  <a href="../index.html">
-    <span class="fas fa-home fa-lg"></span>
-     
-  </a>
-</li>
-<li>
-  <a href="../reference/index.html">Reference</a>
+  <a href="../index.html">Home</a>
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -64,10 +58,13 @@
       <a href="../articles/overview.html">Overview</a>
     </li>
     <li>
-      <a href="../articles/containers.html">Containers</a>
+      <a href="../articles/images.html">Docker Images</a>
     </li>
     <li>
       <a href="../articles/binrepo.html">Binary Repository Generation</a>
+    </li>
+    <li>
+      <a href="../articles/packages.html">Bioconductor Packages</a>
     </li>
     <li>
       <a href="../articles/training.html">Training</a>
@@ -104,7 +101,7 @@
       <h1 data-toc-skip>Bioc/AnVIL binary generation</h1>
                         <h4 class="author">Bioc/AnVIL team</h4>
             
-            <h4 class="date">June 17, 2021</h4>
+            <h4 class="date">June 24, 2021</h4>
       
       <small class="dont-index">Source: <a href="https://github.com/vjcitn/BiocAnVIL/blob/master/vignettes/binrepo.Rmd"><code>vignettes/binrepo.Rmd</code></a></small>
       <div class="hidden name"><code>binrepo.Rmd</code></div>
@@ -113,11 +110,15 @@
 
     
     
-<div id="binary-package-installation-under-development" class="section level2">
+<p>Binary packages for fast installation via <code>AnVIL::install()</code> for Bioconductor and CRAN packages are available at through a <code>CRAN</code>-style repository at <code>https://storage.googleapis.com/bioconductor_docker/packages</code>. The packages are generated with the internal Bioconductor package, <a href="https://github.com/Bioconductor/BiocKubeInstall">BiocKubeInstall</a>, which parallelizes package installation and binary creation on a Kubernetes cluster using Google Kubernetes Engine. The clusters runs and deploys builds Tuesday, Thursdays, and Saturday through a scheduled Github Action. See the <a href="https://bioconductor.github.io/BiocKubeInstall">BiocKubeInstall Documentation</a> for more information.</p>
+<p>BiocKubeInstall works with <a href="https://github.com/Bioconductor/k8sredis">Bioconductor/k8sredis</a>, which facilitations parallelization over a Kubernetes cluster. Docker images for <code>bioc-redis-manager</code> and <code>bioc-redis-worker</code> on Docker Hub.</p>
+<div id="additional-resources" class="section level2">
 <h2 class="hasAnchor">
-<a href="#binary-package-installation-under-development" class="anchor"></a>Binary package installation (under development)</h2>
+<a href="#additional-resources" class="anchor"></a>Additional Resources</h2>
 <ul>
-<li>Because the software environment is fixed by the container, packages can be pre-built and rapidly installed simply by copying from an online repository. We are developing the tooling to support this repository (as folders in google buckets) and to facilitate easy installation (via the <code>AnVIL::install()</code> function).</li>
+<li><a href="https://docs.google.com/presentation/d/1Y7g_6X8I6DPaNK84EzWNo1wVpfAwdORGt6kcgcPYOV4/edit?usp=sharing">Slides</a></li>
+<li>
+<a href="https://github.com/shwetagopaul92/hgvarByKub">shwetagopaul92/hgvarByKub</a> - an example of R and Kubernetes</li>
 </ul>
 </div>
   </div>

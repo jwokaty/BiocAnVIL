@@ -13,7 +13,6 @@ output:
     theme: united
     toc: yes
 ---
-# Bioconductor / AnVIL Team
 
 ## Current Developers
 <div class="container">
