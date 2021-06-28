@@ -71,9 +71,9 @@ See illustrative examples of how you can use Bioconductor in AnVIL workspaces.
 	- Results as of 20 June 2019
 
       - _R_ markdown for [using terra to survey CCDG and
-          CMG]()
+          CM](resources/basicData.Rmd)
 
-  ```{r eval = FALSE} 
+  ```
   ## # A tibble: 10 x 3
   ## # Groups:   study [2]
   ##    study organ      N
@@ -91,7 +91,7 @@ See illustrative examples of how you can use Bioconductor in AnVIL workspaces.
   ```
 
 	- Drilling down on CCDG
-  ```{r eval = FALSE} 
+  ```
   ## # A tibble: 9 x 4
   ## # Groups:   study, organ [3]
   ##   study organ addit         N

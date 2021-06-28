@@ -101,7 +101,7 @@
       <h1 data-toc-skip>Bioc/AnVIL training</h1>
                         <h4 class="author">Bioc/AnVIL team</h4>
             
-            <h4 class="date">June 24, 2021</h4>
+            <h4 class="date">June 28, 2021</h4>
       
       <small class="dont-index">Source: <a href="https://github.com/vjcitn/BiocAnVIL/blob/master/vignettes/training.Rmd"><code>vignettes/training.Rmd</code></a></small>
       <div class="hidden name"><code>training.Rmd</code></div>
@@ -191,43 +191,41 @@
 <p>Results as of 20 June 2019</p>
 <ul>
 <li>
-<em>R</em> markdown for <a href="">using terra to survey CCDG and CMG</a>
+<em>R</em> markdown for <a href="resources/basicData.Rmd">using terra to survey CCDG and CM</a>
 </li>
 </ul>
 </li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="co">## # A tibble: 10 x 3</span>
-<span class="co">## # Groups:   study [2]</span>
-<span class="co">##    study organ      N</span>
-<span class="co">##    &lt;chr&gt; &lt;chr&gt;  &lt;int&gt;</span>
-<span class="co">##  1 CCDG  AI      9031</span>
-<span class="co">##  2 CCDG  CVD    25741</span>
-<span class="co">##  3 CCDG  NP     19422</span>
-<span class="co">##  4 CMG   Blood    277</span>
-<span class="co">##  5 CMG   Brain   1844</span>
-<span class="co">##  6 CMG   Eye      552</span>
-<span class="co">##  7 CMG   Heart    184</span>
-<span class="co">##  8 CMG   Kidney   432</span>
-<span class="co">##  9 CMG   Muscle  1722</span>
-<span class="co">## 10 CMG   Orphan   717</span></code></pre></div>
+<pre><code>## # A tibble: 10 x 3
+## # Groups:   study [2]
+##    study organ      N
+##    &lt;chr&gt; &lt;chr&gt;  &lt;int&gt;
+##  1 CCDG  AI      9031
+##  2 CCDG  CVD    25741
+##  3 CCDG  NP     19422
+##  4 CMG   Blood    277
+##  5 CMG   Brain   1844
+##  6 CMG   Eye      552
+##  7 CMG   Heart    184
+##  8 CMG   Kidney   432
+##  9 CMG   Muscle  1722
+## 10 CMG   Orphan   717</code></pre>
 <ul>
 <li>Drilling down on CCDG</li>
 </ul>
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="co">## # A tibble: 9 x 4</span>
-<span class="co">## # Groups:   study, organ [3]</span>
-<span class="co">##   study organ addit         N</span>
-<span class="co">##   &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;     &lt;int&gt;</span>
-<span class="co">## 1 CCDG  AI    Asthma     1171</span>
-<span class="co">## 2 CCDG  AI    IBD        4694</span>
-<span class="co">## 3 CCDG  AI    T1D        3166</span>
-<span class="co">## 4 CCDG  CVD   AFib       3731</span>
-<span class="co">## 5 CCDG  CVD   EOCAD     20156</span>
-<span class="co">## 6 CCDG  CVD   HemStroke  1358</span>
-<span class="co">## 7 CCDG  CVD   Stroke      496</span>
-<span class="co">## 8 CCDG  NP    Alz        2374</span>
-<span class="co">## 9 CCDG  NP    Autism    17048</span></code></pre></div>
+<pre><code>## # A tibble: 9 x 4
+## # Groups:   study, organ [3]
+##   study organ addit         N
+##   &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;     &lt;int&gt;
+## 1 CCDG  AI    Asthma     1171
+## 2 CCDG  AI    IBD        4694
+## 3 CCDG  AI    T1D        3166
+## 4 CCDG  CVD   AFib       3731
+## 5 CCDG  CVD   EOCAD     20156
+## 6 CCDG  CVD   HemStroke  1358
+## 7 CCDG  CVD   Stroke      496
+## 8 CCDG  NP    Alz        2374
+## 9 CCDG  NP    Autism    17048</code></pre>
 </li>
 </ul>
 </div>
