@@ -1,0 +1,64 @@
+---
+title: "Bioc/AnVIL images"
+shorttitle: "testing pkgdown approach"
+author: "Bioc/AnVIL images"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+vignette: >
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteIndexEntry{Bioc/AnVIL images}
+  %\VignetteEncoding{UTF-8}
+output:
+  BiocStyle::html_document:
+    highlight: pygments
+    number_sections: no
+    theme: united
+    toc: yes
+---
+
+<a name="images"></a>
+
+The latest [Terra-Jupyter-Bioconductor](https://github.com/DataBiosphere/terra-docker/tree/master/terra-jupyter-bioconductor)
+and [R / Bioconductor](https://github.com/anvilproject/anvil-docker/tree/master/anvil-rstudio-bioconductor)
+Docker images are available in [AnVIL](https://anvil.terra.bio) and the
+Google Container Registry. They work like the
+[bioconductor_docker](https://github.com/Bioconductor/bioconductor_docker)
+images, with the capability to install almost all of the Bioconductor packages
+along with a few pre-installed "core" set of packages. The
+terra-jupyter-bioconductor image inherits from the terra-jupyter-r image
+which has all the system dependencies installed. This image has been tested on
+Leonardo and installs all but a few packages in Bioconductor release, which
+fail due to achived CRAN dependencies.
+
+For the following images, check the CHANGELOG.md in their respective
+repositories for the most recent image URL.
+
+## Jupyter notebooks
+
+The following image is available on the [broad-dsp-gcr-public GCP Container
+Registry for terra-jupyter-bioconductor](https://console.cloud.google.com/gcr/images/broad-dsp-gcr-public/). 
+
+- [Terra-Jupyter-Bioconductor](https://github.com/DataBiosphere/terra-docker/tree/master/terra-jupyter-bioconductor)
+is based on R version 4.1 and Bioconductor version 3.13. The image is available at
+`us.gcr.io/broad-dsp-gcr-public/terra-jupyter-bioconductor:1.0.15`. It can be
+used by selecting the `Bioconductor` notebook runtime. See the
+[Terra-Jupyter-Bioconductor CHANGELOG.md](https://github.com/DataBiosphere/terra-docker/blob/master/terra-jupyter-bioconductor/CHANGELOG.md).
+
+## RStudio / Bioconductor
+
+The following images are available on the [anvil-gcr-public GCP Container
+Registry](https://console.cloud.google.com/gcr/images/anvil-gcr-public/). 
+
+- [R / Bioconductor (release 3.13)](https://github.com/anvilproject/anvil-docker/tree/master/anvil-rstudio-bioconductor)
+is based on R version 4.1 and Bioconductor version 3.13. The image is accessible at
+`us.gcr.io/anvil-gcr-public/anvil-rstudio-bioconductor:3.13.1`. It can be used
+by selecting a 'custom' notebook runtime and selecting the RStudio image under
+'Community Maintained RStudio Environment (Verified Partners)'. See the
+[AnVIL-RStudio-Bioconductor CHANGELOG.md](https://github.com/anvilproject/anvil-docker/blob/master/anvil-rstudio-bioconductor/CHANGELOG.md).
+
+- [R / Bioconductor (devel)](https://github.com/anvilproject/anvil-docker/tree/master/anvil-rstudio-bioconductor-devel)
+The image is accessible at `us.gcr.io/anvil-gcr-public/anvil-rstudio-bioconductor-devel:3.14.1`.
+It can be used by selecting 'Other Environments'. See the
+[AnVIL-RStudio-Bioconductor-devel CHANGELOG.md](https://github.com/anvilproject/anvil-docker/blob/master/anvil-rstudio-bioconductor-devel/CHANGELOG.md).
+
+- [Legacy R / Bioconductor](https://github.com/anvilproject/anvil-docker/tree/master/anvil-rstudio-bioconductor)
+The image is based on R version 4.0.5 and Bioconductor version 3.12.

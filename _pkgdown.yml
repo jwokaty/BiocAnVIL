@@ -1,17 +1,39 @@
+pkgdown:
+  as_is: false
 
 template:
   params:
-    bootswatch: flatly
+    bootswatch: yeti
     ganalytics: UA-93043521-1
 
 
 navbar:
+  left:
+    - text: "Home"
+      href: index.html
+    - text: Project
+      menu:
+        - text: Overview
+          href: articles/overview.html
+        - text: Docker Images
+          href: articles/images.html
+        - text: Binary Repository Generation
+          href: articles/binrepo.html
+        - text: Bioconductor Packages
+          href: articles/packages.html
+        - text: Training 
+          href: articles/training.html
+        - text: Team 
+          href: articles/team.html
+        - text: Updating the Website 
+          href: articles/updating.html
   right:
-   - icon: fa-github fa-lg
-     text: "github"
+   - icon: fab fa-github fa-lg
      href: https://github.com/vjcitn/BiocAnVIL
 
 home:
-  title: Bioc projects for AnVIL
+  title: Bioconductor AnVIL Projects
   description: >
-    Not clear what this file does.
+    Bioconductor contributes R / Bioconductor Jupyter notebooks, RStudio /
+    Bioconductor docker images, AnVIL packages, fast binary installation
+    packages, workshops, and training materials to AnVIL.
