@@ -1,7 +1,6 @@
 ---
 title: "Updating the Website"
 author: "Bioc/Anvil Team"
-date: "`r format(Sys.time(), '%B %d, %Y')`"
 vignette: >
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteIndexEntry{updating the website}

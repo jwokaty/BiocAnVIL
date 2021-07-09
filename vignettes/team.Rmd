@@ -1,7 +1,6 @@
 ---
 title: "The Bioc/AnVIL team"
-author: "Vincent J. Carey, stvjc at channing.harvard.edu"
-date: "`r format(Sys.time(), '%B %d, %Y')`"
+author: "Bioc/AnVIL team"
 vignette: >
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteIndexEntry{The Bioc/AnVIL Team}

@@ -1,7 +1,6 @@
 ---
 title: "Bioc/AnVIL overview"
 author: "Bioc/AnVIL team"
-date: "`r format(Sys.time(), '%B %d, %Y')`"
 vignette: >
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteIndexEntry{Bioconductor / AnVIL Overview}
