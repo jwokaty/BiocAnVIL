@@ -2,7 +2,6 @@
 title: "Bioc/AnVIL images"
 shorttitle: "testing pkgdown approach"
 author: "Bioc/AnVIL images"
-date: "`r format(Sys.time(), '%B %d, %Y')`"
 vignette: >
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteIndexEntry{Bioc/AnVIL images}
