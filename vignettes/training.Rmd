@@ -41,7 +41,7 @@ learned positives and negatives from February 2020.
 
 See illustrative examples of how you can use Bioconductor in AnVIL workspaces.
 
-- [The AnVIL package](https://app.terra.bio/#workspaces/bioconductor-rpci-anvil/Bioconductor-Package-AnVIL)
+- [The AnVIL package](https://app.terra.bio/#workspaces/bioconductor-rpci-anvil/Bioconductor-Package-AnVIL) (public release pending)
     - Simplifies exploration of the Terra data model
     - Supports programmatic development of workflows, workspaces, and resource management data
 - [Orchestrating Single Cell Analysis](https://app.terra.bio/#workspaces/use-strides/Bioconductor-Workshop-OSCA-3-12)
@@ -50,7 +50,7 @@ See illustrative examples of how you can use Bioconductor in AnVIL workspaces.
 - [RNA-seq analysis with DESeq2](https://app.terra.bio/#workspaces/bioconductor-rpci-anvil/Bioconductor-Workflow-DESeq2)
     - A collection of Jupyter notebooks
     - Includes a WDL workflow that runs salmon quantification on FASTQ inputs
-- [Pan-cancer Transcriptome Surveys](https://app.terra.bio/#workspaces/landmarkanvil2/pancan_tx_public)
+- [Pan-cancer Transcriptome Surveys](https://app.terra.bio/#workspaces/landmarkanvil2/pancan_tx_public) (public release pending)
     - Two workflows, each devoted to different gene sets
     - The WDL and scripts are registered at [dockstore.org](https://dockstore.org/workflows/github.com/vjcitn/BiocOncoTK/msireg1:master?tab=info)
     - Unit testing for the script components are managed in [BiocOncoTK](https://github.com/vjcitn/BiocOncoTK/blob/master/tests/testthat/test_dockstore_scripts.R)
