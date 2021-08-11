@@ -1,7 +1,7 @@
 Package: BiocAnVIL
 Title: Bioconductor's contributions to [NHGRI's Analysis and VIsualization Laboratory (AnVIL)](https://anvilproject.org)
 	are many and are evolving.
-Version: 0.0.5
+Version: 0.0.6
 Authors@R:
     person(given = "Bioc-AnVIL",
            family = "Team",
