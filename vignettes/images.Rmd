@@ -57,7 +57,7 @@ used by selecting a "custom" notebook runtime and selecting the RStudio image
 under "Community Maintained RStudio Environment (Verified Partners)". See the
 [AnVIL-RStudio-Bioconductor CHANGELOG.md](https://github.com/anvilproject/anvil-docker/blob/master/anvil-rstudio-bioconductor/CHANGELOG.md).
 
-s [R / Bioconductor (devel)](https://github.com/anvilproject/anvil-docker/tree/master/anvil-rstudio-bioconductor-devel)
+- [R / Bioconductor (devel)](https://github.com/anvilproject/anvil-docker/tree/master/anvil-rstudio-bioconductor-devel)
 In Terra, the image is accessible with the version number as in
 `us.gcr.io/anvil-gcr-public/anvil-rstudio-bioconductor-devel:{version}`.
 It can be used by selecting "Other Environments". See the
