@@ -21,8 +21,8 @@ make a new article, add the new `.Rmd` file in `vignettes` directory. `pkgdown`
 will automatically generate a link to the article in the navigation. To edit
 the navigation, edit the `_pkgdown.yml` file.
 3. `git push` your new branch to the repository. 
-4. A push or pull request to the `main` branch will trigger the `pkgdown` action
-to rebuild the site.
+4. Push to `main` or open a pull request to the `main` branch to trigger the
+pkgdown action to rebuild the site.
 
 ## Customizations
 
