@@ -30,7 +30,10 @@ were held in 2021 from April to June.
 - Week 6: [Reproducible Research with AnVILPublish](https://anvilproject.org/learn/data-analysts/reproducible-research-with-anvilpublish)
   with Martin Morgan
 - Week 7: [Participant Stories](https://anvilproject.org/learn/data-analysts/participant-stories)
-  
+
+[Introduction to the Terra AnVIL Cloud-based Genomics Platform](https://youtu.be/N83iDYE2yQM) with
+Sehyun Oh and Levi Waldron at Bioc2021
+
 [Terra in the Classroom](https://docs.google.com/presentation/d/1AvEt6UIIx-G5eTe4hlfkGOYsUcSQrKx8ySlnnfg7XH8/edit?usp=sharing)
 documents the experience of running a small course utilizing AnVIL. Includes some set up,
 learned positives and negatives from February 2020.
