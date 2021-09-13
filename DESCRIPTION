@@ -1,7 +1,7 @@
 Package: BiocAnVIL
 Title: Bioconductor's contributions to [NHGRI's Analysis and VIsualization Laboratory (AnVIL)](https://anvilproject.org)
 	are many and are evolving.
-Version: 0.0.7
+Version: 0.0.8
 Authors@R:
     person(given = "Bioc-AnVIL",
            family = "Team",
@@ -10,7 +10,12 @@ Authors@R:
 Description: Bioconductor's contributions to [NHGRI's Analysis and VIsualization Laboratory (AnVIL)](https://anvilproject.org)
 	are many and are evolving.  
 Depends: R (>= 4.0.0), tools, utils
-Suggests: knitr, BiocStyle, testthat, rmarkdown, pkgdown
+Suggests:
+    knitr,
+    BiocStyle,
+    testthat,
+    rmarkdown,
+    pkgdown
 License: Artistic-2.0
 VignetteBuilder: knitr
 biocViews: Software
