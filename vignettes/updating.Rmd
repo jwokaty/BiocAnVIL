@@ -20,9 +20,9 @@ output:
 make a new article, add the new `.Rmd` file in `vignettes` directory. `pkgdown`
 will automatically generate a link to the article in the navigation. To edit
 the navigation, edit the `_pkgdown.yml` file.
-3. In the terminal, run `make` to rebuild the website. A local, updated version
-should appear in your browser.
-4. `git push` your new branch to the repository. 
+3. `git push` your new branch to the repository. 
+4. A push or pull request to the `main` branch will trigger the `pkgdown` action
+to rebuild the site.
 
 ## Customizations
 
