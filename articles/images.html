@@ -26,6 +26,8 @@
 </script>
 </head>
 <body data-spy="scroll" data-target="#toc">
+    
+
     <div class="container template-article">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -38,7 +40,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">BiocAnVIL</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.9</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.0.9</span>
       </span>
     </div>
 
@@ -80,7 +82,7 @@
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-  <a href="https://github.com/vjcitn/BiocAnVIL">
+  <a href="https://github.com/Bioconductor/BiocAnVIL" class="external-link">
     <span class="fab fa-github fa-lg"></span>
      
   </a>
@@ -99,10 +101,10 @@
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
       <h1 data-toc-skip>Bioc/AnVIL images</h1>
-                        <h4 class="author">Bioc/AnVIL images</h4>
+                        <h4 data-toc-skip class="author">Bioc/AnVIL images</h4>
             
       
-      <small class="dont-index">Source: <a href="https://github.com/vjcitn/BiocAnVIL/blob/master/vignettes/images.Rmd"><code>vignettes/images.Rmd</code></a></small>
+      <small class="dont-index">Source: <a href="https://github.com/Bioconductor/BiocAnVIL/blob/HEAD/vignettes/images.Rmd" class="external-link"><code>vignettes/images.Rmd</code></a></small>
       <div class="hidden name"><code>images.Rmd</code></div>
 
     </div>
@@ -110,25 +112,25 @@
     
     
 <p><a name="images"></a></p>
-<p>The latest <a href="https://github.com/DataBiosphere/terra-docker/tree/master/terra-jupyter-bioconductor">Terra-Jupyter-Bioconductor</a> and <a href="https://github.com/anvilproject/anvil-docker/tree/master/anvil-rstudio-bioconductor">R / Bioconductor</a> Docker images are available in <a href="https://anvil.terra.bio">AnVIL</a> and the Google Container Registry. They work like the <a href="https://github.com/Bioconductor/bioconductor_docker">bioconductor_docker</a> images, with the capability to install almost all of the Bioconductor packages along with a few pre-installed “core” set of packages. The terra-jupyter-bioconductor image inherits from the terra-jupyter-r image which has all the system dependencies installed. This image has been tested on Leonardo and installs all but a few packages in Bioconductor release, which fail due to achived CRAN dependencies.</p>
+<p>The latest <a href="https://github.com/DataBiosphere/terra-docker/tree/master/terra-jupyter-bioconductor" class="external-link">Terra-Jupyter-Bioconductor</a> and <a href="https://github.com/anvilproject/anvil-docker/tree/master/anvil-rstudio-bioconductor" class="external-link">R / Bioconductor</a> Docker images are available in <a href="https://anvil.terra.bio" class="external-link">AnVIL</a> and the Google Container Registry. They work like the <a href="https://github.com/Bioconductor/bioconductor_docker" class="external-link">bioconductor_docker</a> images, with the capability to install almost all of the Bioconductor packages along with a few pre-installed “core” set of packages. The terra-jupyter-bioconductor image inherits from the terra-jupyter-r image which has all the system dependencies installed. This image has been tested on Leonardo and installs all but a few packages in Bioconductor release, which fail due to achived CRAN dependencies.</p>
 <p>For the following images, check the CHANGELOG.md in their respective repositories for the most recent image URL.</p>
-<div id="jupyter-notebooks" class="section level2">
-<h2 class="hasAnchor">
-<a href="#jupyter-notebooks" class="anchor"></a>Jupyter notebooks</h2>
-<p>The following image is available on the <a href="https://console.cloud.google.com/gcr/images/broad-dsp-gcr-public/US/terra-jupyter-bioconductor">broad-dsp-gcr-public GCP Container Registry for terra-jupyter-bioconductor</a>.</p>
+<div class="section level2">
+<h2 id="jupyter-notebooks">Jupyter notebooks<a class="anchor" aria-label="anchor" href="#jupyter-notebooks"></a>
+</h2>
+<p>The following image is available on the <a href="https://console.cloud.google.com/gcr/images/broad-dsp-gcr-public/US/terra-jupyter-bioconductor" class="external-link">broad-dsp-gcr-public GCP Container Registry for terra-jupyter-bioconductor</a>.</p>
 <ul>
 <li>
-<a href="https://github.com/DataBiosphere/terra-docker/tree/master/terra-jupyter-bioconductor">Terra-Jupyter-Bioconductor</a> is based on R version 4.1 and Bioconductor version 3.13. In Terra, it is listed with the version number as in <code>us.gcr.io/broad-dsp-gcr-public/terra-jupyter-bioconductor:{version}</code> and can be used by selecting the “Bioconductor” notebook runtime. See the <a href="https://github.com/DataBiosphere/terra-docker/blob/master/terra-jupyter-bioconductor/CHANGELOG.md">Terra-Jupyter-Bioconductor CHANGELOG.md</a>.</li>
+<a href="https://github.com/DataBiosphere/terra-docker/tree/master/terra-jupyter-bioconductor" class="external-link">Terra-Jupyter-Bioconductor</a> is based on R version 4.1 and Bioconductor version 3.14. In Terra, it is listed with the version number as in <code>us.gcr.io/broad-dsp-gcr-public/terra-jupyter-bioconductor:{version}</code> and can be used by selecting the “Bioconductor” notebook runtime. See the <a href="https://github.com/DataBiosphere/terra-docker/blob/master/terra-jupyter-bioconductor/CHANGELOG.md" class="external-link">Terra-Jupyter-Bioconductor CHANGELOG.md</a>.</li>
 </ul>
 </div>
-<div id="rstudio-bioconductor" class="section level2">
-<h2 class="hasAnchor">
-<a href="#rstudio-bioconductor" class="anchor"></a>RStudio / Bioconductor</h2>
-<p>The following images are available on the <a href="https://console.cloud.google.com/gcr/images/anvil-gcr-public/">anvil-gcr-public GCP Container Registry</a>.</p>
+<div class="section level2">
+<h2 id="rstudio-bioconductor">RStudio / Bioconductor<a class="anchor" aria-label="anchor" href="#rstudio-bioconductor"></a>
+</h2>
+<p>The following images are available on the <a href="https://console.cloud.google.com/gcr/images/anvil-gcr-public/" class="external-link">anvil-gcr-public GCP Container Registry</a>.</p>
 <ul>
-<li><p><a href="https://github.com/anvilproject/anvil-docker/tree/master/anvil-rstudio-bioconductor">R / Bioconductor (release 3.13)</a> is based on R version 4.1 and Bioconductor version 3.13. In Terra, it is listed with the version number as in <code>us.gcr.io/anvil-gcr-public/anvil-rstudio-bioconductor:{version}</code> and can be used by selecting a “custom” notebook runtime and selecting the RStudio image under “Community Maintained RStudio Environment (Verified Partners)”. See the <a href="https://github.com/anvilproject/anvil-docker/blob/master/anvil-rstudio-bioconductor/CHANGELOG.md">AnVIL-RStudio-Bioconductor CHANGELOG.md</a>.</p></li>
-<li><p><a href="https://github.com/anvilproject/anvil-docker/tree/master/anvil-rstudio-bioconductor-devel">R / Bioconductor (devel)</a> In Terra, the image is accessible with the version number as in <code>us.gcr.io/anvil-gcr-public/anvil-rstudio-bioconductor-devel:{version}</code>. It can be used by selecting “Other Environments”. See the <a href="https://github.com/anvilproject/anvil-docker/blob/master/anvil-rstudio-bioconductor-devel/CHANGELOG.md">AnVIL-RStudio-Bioconductor-devel CHANGELOG.md</a>.</p></li>
-<li><p><a href="https://github.com/anvilproject/anvil-docker/tree/master/anvil-rstudio-bioconductor">Legacy R / Bioconductor</a> The image is based on R version 4.0.5 and Bioconductor version 3.12.</p></li>
+<li><p><a href="https://github.com/anvilproject/anvil-docker/tree/master/anvil-rstudio-bioconductor" class="external-link">R / Bioconductor (release 3.14)</a> is based on R version 4.1 and Bioconductor version 3.14. In Terra, it is listed with the version number as in <code>us.gcr.io/anvil-gcr-public/anvil-rstudio-bioconductor:{version}</code> and can be used by selecting a “custom” notebook runtime and selecting the RStudio image under “Community Maintained RStudio Environment (Verified Partners)”. See the <a href="https://github.com/anvilproject/anvil-docker/blob/master/anvil-rstudio-bioconductor/CHANGELOG.md" class="external-link">AnVIL-RStudio-Bioconductor CHANGELOG.md</a>.</p></li>
+<li><p><a href="https://github.com/anvilproject/anvil-docker/tree/master/anvil-rstudio-bioconductor-devel" class="external-link">R / Bioconductor (devel)</a> In Terra, the image is accessible with the version number as in <code>us.gcr.io/anvil-gcr-public/anvil-rstudio-bioconductor-devel:{version}</code>. It can be used by selecting “Other Environments”. See the <a href="https://github.com/anvilproject/anvil-docker/blob/master/anvil-rstudio-bioconductor-devel/CHANGELOG.md" class="external-link">AnVIL-RStudio-Bioconductor-devel CHANGELOG.md</a>.</p></li>
+<li><p><a href="https://github.com/anvilproject/anvil-docker/tree/master/anvil-rstudio-bioconductor" class="external-link">Legacy R / Bioconductor</a> The image is based on R version 4.0.5 and Bioconductor version 3.13.</p></li>
 </ul>
 </div>
   </div>
@@ -144,11 +146,13 @@
 
 
       <footer><div class="copyright">
-  <p>Developed by Bioc-AnVIL Team.</p>
+  <p></p>
+<p>Developed by Bioc-AnVIL Team.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
+  <p></p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
 </div>
 
       </footer>
@@ -156,6 +160,8 @@
 
   
 
+
+  
 
   </body>
 </html>
