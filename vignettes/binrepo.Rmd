@@ -15,7 +15,7 @@ output:
 
 Binary packages for fast installation via `AnVIL::install()` for Bioconductor
 and CRAN packages are available at through a `CRAN`-style repository at
-`https://storage.googleapis.com/bioconductor_docker/packages`. The packages are
+`https://storage.googleapis.com/bioconductor-packages/3.15/container-binaries/`. The packages are
 generated with the internal Bioconductor package,
 [BiocKubeInstall](https://github.com/Bioconductor/BiocKubeInstall), which
 parallelizes package installation and binary creation on a Kubernetes cluster
@@ -23,9 +23,9 @@ using Google Kubernetes Engine. The clusters runs and deploys builds Tuesday,
 Thursdays, and Saturday through a scheduled Github Action. See the [BiocKubeInstall
 Documentation](https://bioconductor.github.io/BiocKubeInstall) for more information.
 
-BiocKubeInstall works with [Bioconductor/k8sredis](https://github.com/Bioconductor/k8sredis),
+BiocKubeInstall works with [mtmorgan/RedisParam](https://github.com/mtmorgan/RedisParam),
 which facilitations parallelization over a Kubernetes cluster. Docker images for
-`bioc-redis-manager` and `bioc-redis-worker` on Docker Hub.
+`bioc-redis:manager` and a release worker e.g `bioc-redis:RELEASE_3_14` are on DockerHub.
 
 ## Additional Resources
 - [Slides](https://docs.google.com/presentation/d/1Y7g_6X8I6DPaNK84EzWNo1wVpfAwdORGt6kcgcPYOV4/edit?usp=sharing)

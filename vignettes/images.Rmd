@@ -38,7 +38,7 @@ Registry for
 terra-jupyter-bioconductor](https://console.cloud.google.com/gcr/images/broad-dsp-gcr-public/US/terra-jupyter-bioconductor).
 
 - [Terra-Jupyter-Bioconductor](https://github.com/DataBiosphere/terra-docker/tree/master/terra-jupyter-bioconductor)
-is based on R version 4.1 and Bioconductor version 3.13. In Terra, it is listed
+is based on R version 4.1 and Bioconductor version 3.14. In Terra, it is listed
 with the version number as in
 `us.gcr.io/broad-dsp-gcr-public/terra-jupyter-bioconductor:{version}` and can
 be used by selecting the "Bioconductor" notebook runtime. See the
@@ -49,8 +49,8 @@ be used by selecting the "Bioconductor" notebook runtime. See the
 The following images are available on the [anvil-gcr-public GCP Container
 Registry](https://console.cloud.google.com/gcr/images/anvil-gcr-public/). 
 
-- [R / Bioconductor (release 3.13)](https://github.com/anvilproject/anvil-docker/tree/master/anvil-rstudio-bioconductor)
-is based on R version 4.1 and Bioconductor version 3.13. In Terra, it is listed
+- [R / Bioconductor (release 3.14)](https://github.com/anvilproject/anvil-docker/tree/master/anvil-rstudio-bioconductor)
+is based on R version 4.1 and Bioconductor version 3.14. In Terra, it is listed
 with the version number as in
 `us.gcr.io/anvil-gcr-public/anvil-rstudio-bioconductor:{version}` and can be
 used by selecting a "custom" notebook runtime and selecting the RStudio image
@@ -64,4 +64,4 @@ It can be used by selecting "Other Environments". See the
 [AnVIL-RStudio-Bioconductor-devel CHANGELOG.md](https://github.com/anvilproject/anvil-docker/blob/master/anvil-rstudio-bioconductor-devel/CHANGELOG.md).
 
 - [Legacy R / Bioconductor](https://github.com/anvilproject/anvil-docker/tree/master/anvil-rstudio-bioconductor)
-The image is based on R version 4.0.5 and Bioconductor version 3.12.
+The image is based on R version 4.0.5 and Bioconductor version 3.13.
