@@ -37,12 +37,8 @@ output:
 </div>
 <div class="row align-items-center">
 <div class="col">
-<img src="images/teampics/LoriShepherd.jpg" width="200px" alt="Lori Shepherd" title="Lori Shepherd"/>
-<br>Lori Ann Shepherd (PM)
-</div>
-<div class="col">
 <img src="images/teampics/NiteshTuraga.jpeg" width="200px" alt="Nitesh Turaga" title="Nitesh Turaga"/>
-<br>Nitesh Turaga
+<br>Nitesh Turaga (PM)
 </div>
 </div>
 <div class="row align-items-center">
@@ -56,6 +52,7 @@ output:
 ## Past Developers
 
 <ul>
+  <li>Lori Shepherd</li>
   <li>BJ Stubbs</li>
   <li>Shweta Gopaulakrishnan</li>
   <li>Ludwig Geistlinger</li>
